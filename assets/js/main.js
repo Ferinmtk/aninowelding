@@ -86,6 +86,23 @@
     });
   }
 
+  // Background video: desktop only, loaded when scrolled into view. Skipped for
+  // reduced motion and data-saver so phones on mobile data never download it.
+  var bgVideo = document.querySelector("video[data-src]");
+  var saveData = navigator.connection && navigator.connection.saveData;
+  if (bgVideo && "IntersectionObserver" in window && !saveData &&
+      window.matchMedia("(min-width: 761px) and (prefers-reduced-motion: no-preference)").matches) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) { if (bgVideo.src) bgVideo.pause(); return; }
+        if (!bgVideo.src) bgVideo.src = bgVideo.dataset.src;
+        var p = bgVideo.play();
+        if (p && p.catch) p.catch(function () {});
+      });
+    }, { rootMargin: "200px" });
+    io.observe(bgVideo);
+  }
+
   // Contact form → WhatsApp with the message pre-filled
   var waBtn = document.getElementById("send-wa");
   var form = document.getElementById("quote-form");

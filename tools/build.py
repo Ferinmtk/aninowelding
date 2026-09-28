@@ -9,6 +9,7 @@ assets/img/gallery/gallery.json, and writes everything to dist/.
 
 No dependencies beyond the Python 3 standard library.
 """
+import hashlib
 import html
 import json
 import re
@@ -168,6 +169,11 @@ def main():
     DIST.mkdir()
 
     layout = (SRC / "partials" / "layout.html").read_text()
+    # Cache-bust CSS/JS: assets are cached for 30 days (netlify.toml), so the URL
+    # must change whenever the file does.
+    for asset in ("assets/css/style.css", "assets/js/main.js"):
+        digest = hashlib.sha1((ROOT / asset).read_bytes()).hexdigest()[:8]
+        layout = layout.replace(f'"{asset}"', f'"{asset}?v={digest}"')
     gallery = load_gallery()
 
     for page in sorted((SRC / "pages").glob("*.html")):

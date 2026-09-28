@@ -93,7 +93,10 @@
     </section>
 
     <div class="container">
-      <section class="cta">
+      <section class="cta cta--media">
+        <!-- Desktop only: main.js loads data-src when the block scrolls into view. Phones get the poster. -->
+        <video class="cta__bg" muted loop playsinline preload="none" aria-hidden="true"
+          poster="assets/img/site/sparks-poster.webp" data-src="assets/video/sparks.mp4"></video>
         <div>
           <h2>Like what you see?</h2>
           <p>Call or WhatsApp {{PHONE_DISPLAY}} for a free quote.</p>
