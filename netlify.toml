@@ -1,0 +1,15 @@
+# Netlify: runs the build (Python is preinstalled) and publishes dist/.
+[build]
+  command = "python3 tools/build.py"
+  publish = "dist"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

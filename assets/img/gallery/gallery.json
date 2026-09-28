@@ -1,0 +1,155 @@
+[
+  {
+    "id": "p08",
+    "category": "roofing",
+    "caption": "Gazebo shade with decorative cut-steel panels",
+    "thumb": "assets/img/gallery/p08-800.webp",
+    "full": "assets/img/gallery/p08-1600.webp",
+    "tw": 645,
+    "th": 800
+  },
+  {
+    "id": "p04",
+    "category": "gates",
+    "caption": "Black steel gate with lattice top panels",
+    "thumb": "assets/img/gallery/p04-800.webp",
+    "full": "assets/img/gallery/p04-1600.webp",
+    "tw": 472,
+    "th": 800
+  },
+  {
+    "id": "p01",
+    "category": "doors",
+    "caption": "Double steel main door with side panels",
+    "thumb": "assets/img/gallery/p01-800.webp",
+    "full": "assets/img/gallery/p01-1600.webp",
+    "tw": 645,
+    "th": 800
+  },
+  {
+    "id": "p11",
+    "category": "windows",
+    "caption": "Window grills fitted on a multi-storey building",
+    "thumb": "assets/img/gallery/p11-800.webp",
+    "full": "assets/img/gallery/p11-1600.webp",
+    "tw": 645,
+    "th": 800
+  },
+  {
+    "id": "p03",
+    "category": "doors",
+    "caption": "Steel door with timber-look inserts",
+    "thumb": "assets/img/gallery/p03-800.webp",
+    "full": "assets/img/gallery/p03-1600.webp",
+    "tw": 645,
+    "th": 800
+  },
+  {
+    "id": "p18",
+    "category": "gates",
+    "caption": "Grey steel gate with vertical bars",
+    "thumb": "assets/img/gallery/p18-800.webp",
+    "full": "assets/img/gallery/p18-1600.webp",
+    "tw": 800,
+    "th": 522
+  },
+  {
+    "id": "p06",
+    "category": "roofing",
+    "caption": "Steel roof structure under construction",
+    "thumb": "assets/img/gallery/p06-800.webp",
+    "full": "assets/img/gallery/p06-1600.webp",
+    "tw": 800,
+    "th": 522
+  },
+  {
+    "id": "p14",
+    "category": "grills",
+    "caption": "Full-height window grill with opening sashes",
+    "thumb": "assets/img/gallery/p14-800.webp",
+    "full": "assets/img/gallery/p14-1600.webp",
+    "tw": 387,
+    "th": 800
+  },
+  {
+    "id": "p05",
+    "category": "gates",
+    "caption": "Steel gate with grid panel design",
+    "thumb": "assets/img/gallery/p05-800.webp",
+    "full": "assets/img/gallery/p05-1600.webp",
+    "tw": 800,
+    "th": 522
+  },
+  {
+    "id": "p02",
+    "category": "doors",
+    "caption": "Single steel door with brass-look accents",
+    "thumb": "assets/img/gallery/p02-800.webp",
+    "full": "assets/img/gallery/p02-1600.webp",
+    "tw": 645,
+    "th": 800
+  },
+  {
+    "id": "p16",
+    "category": "windows",
+    "caption": "Steel window with security grill, fitted",
+    "thumb": "assets/img/gallery/p16-800.webp",
+    "full": "assets/img/gallery/p16-1600.webp",
+    "tw": 602,
+    "th": 800
+  },
+  {
+    "id": "p09",
+    "category": "gates",
+    "caption": "Modern slatted steel gate",
+    "thumb": "assets/img/gallery/p09-800.webp",
+    "full": "assets/img/gallery/p09-1600.webp",
+    "tw": 543,
+    "th": 655
+  },
+  {
+    "id": "p13",
+    "category": "doors",
+    "caption": "Steel pedestrian door with frame",
+    "thumb": "assets/img/gallery/p13-800.webp",
+    "full": "assets/img/gallery/p13-1600.webp",
+    "tw": 645,
+    "th": 800
+  },
+  {
+    "id": "p15",
+    "category": "windows",
+    "caption": "Steel window frame with bars",
+    "thumb": "assets/img/gallery/p15-800.webp",
+    "full": "assets/img/gallery/p15-1600.webp",
+    "tw": 645,
+    "th": 800
+  },
+  {
+    "id": "p17",
+    "category": "grills",
+    "caption": "Steel window grill, ready for fitting",
+    "thumb": "assets/img/gallery/p17-800.webp",
+    "full": "assets/img/gallery/p17-1600.webp",
+    "tw": 645,
+    "th": 800
+  },
+  {
+    "id": "p07",
+    "category": "windows",
+    "caption": "Steel window frame in the workshop",
+    "thumb": "assets/img/gallery/p07-800.webp",
+    "full": "assets/img/gallery/p07-1600.webp",
+    "tw": 600,
+    "th": 800
+  },
+  {
+    "id": "p10",
+    "category": "doors",
+    "caption": "Double steel door with louvred panels",
+    "thumb": "assets/img/gallery/p10-800.webp",
+    "full": "assets/img/gallery/p10-1600.webp",
+    "tw": 635,
+    "th": 800
+  }
+]

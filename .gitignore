@@ -1,0 +1,9 @@
+# Build output — Netlify rebuilds it from source
+dist/
+
+# Original phone photos (full size, contain EXIF/GPS). Web versions live in assets/img/gallery/.
+photos-original/
+
+# Design mockups and local screenshots
+mockups/
+.playwright-mcp/

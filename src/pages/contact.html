@@ -1,0 +1,60 @@
+<!--meta {
+  "title": "Contact Anino Welding | Call or WhatsApp 0741 700 573",
+  "description": "Get a free welding quote in Syokimau and across Kenya. Call or WhatsApp 0741 700 573, email, or send the form.",
+  "nav": "contact"
+} -->
+    <div class="container page-hero">
+      <span class="eyebrow">Contact</span>
+      <h1>Get a free quote.</h1>
+      <p class="lead">The fastest way is WhatsApp: send a photo or measurements and we'll reply with a quote.</p>
+    </div>
+
+    <section class="section" style="padding-top:20px">
+      <div class="container contact-grid">
+        <div class="panel">
+          <ul class="contact-list">
+            <li><span class="ic">{{icon:phone}}</span><div><small>Call</small><a href="tel:{{PHONE_TEL}}">{{PHONE_DISPLAY}}</a></div></li>
+            <li><span class="ic">{{icon:wa}}</span><div><small>WhatsApp</small><a href="{{WA_LINK}}" target="_blank" rel="noopener">{{PHONE_INTL}}</a></div></li>
+            <li><span class="ic">{{icon:mail}}</span><div><small>Email</small><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></div></li>
+            <li><span class="ic">{{icon:pin}}</span><div><small>Workshop</small><span>{{LOCATION}}, Machakos County, Kenya</span></div></li>
+            <li><span class="ic">{{icon:clock}}</span><div><small>Hours</small><span>{{HOURS}}</span></div></li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn--wa" href="{{WA_LINK}}" target="_blank" rel="noopener">{{icon:wa}} WhatsApp</a>
+            <a class="btn btn--ink" href="tel:{{PHONE_TEL}}">{{icon:phone}} Call</a>
+          </div>
+          <!-- TODO(client): swap for the exact workshop pin once we have a Google Maps link. -->
+          <iframe class="map" title="Map of {{LOCATION}}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Syokimau,+Kenya&amp;z=14&amp;output=embed"></iframe>
+        </div>
+
+        <div class="panel">
+          <h2 style="font-size:1.7rem">Send a message</h2>
+          <form class="form" id="quote-form" data-wa="{{WA_NUMBER}}" name="quote" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="company">
+            <input type="hidden" name="form-name" value="quote">
+            <p class="hp"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+            <div class="row">
+              <div><label for="f-name">Your name</label><input id="f-name" name="name" required autocomplete="name"></div>
+              <div><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="07xx xxx xxx"></div>
+            </div>
+            <div class="row">
+              <div>
+                <label for="f-service">What do you need?</label>
+                <select id="f-service" name="service">
+                  <option>Gate</option><option>Door</option><option>Windows</option><option>Grills / handrails</option>
+                  <option>Structure / roofing</option><option>Repair</option><option>Something else</option>
+                </select>
+              </div>
+              <div><label for="f-location">Your location</label><input id="f-location" name="location" placeholder="e.g. Syokimau, Kitengela, abroad"></div>
+            </div>
+            <div><label for="f-email">Email <span class="muted">(optional)</span></label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+            <div><label for="f-msg">Details</label><textarea id="f-msg" name="message" required placeholder="Size, design, anything we should know"></textarea></div>
+            <div class="btn-row">
+              <button class="btn btn--wa" type="button" id="send-wa">{{icon:wa}} Send via WhatsApp</button>
+              <button class="btn btn--ink" type="submit">{{icon:mail}} Send by email</button>
+            </div>
+            <p class="note">Have photos? WhatsApp is best, because you can attach them there.</p>
+          </form>
+        </div>
+      </div>
+    </section>

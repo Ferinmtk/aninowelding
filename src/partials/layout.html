@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-KE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="robots" content="{{ROBOTS}}">
+  <link rel="canonical" href="{{CANONICAL}}">
+  <meta name="theme-color" content="#f6f5f2">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{NAME}}">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL}}">
+  <meta property="og:image" content="{{DOMAIN}}/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:locale" content="en_KE">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "{{DOMAIN}}/#business",
+    "name": "{{NAME}}",
+    "url": "{{DOMAIN}}/",
+    "logo": "{{DOMAIN}}/apple-touch-icon.png",
+    "image": "{{DOMAIN}}/og-image.jpg",
+    "telephone": "{{PHONE_TEL}}",
+    "email": "{{EMAIL}}",
+    "description": "Welding and steel fabrication workshop in Syokimau, Kenya: gates, doors, windows, window grills, balcony and staircase rails, gazebos, roof structures and welding repairs.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Syokimau", "addressRegion": "Machakos County", "addressCountry": "KE" },
+    "areaServed": [
+      { "@type": "Place", "name": "Syokimau" }, { "@type": "Place", "name": "Mlolongo" },
+      { "@type": "Place", "name": "Athi River" }, { "@type": "Place", "name": "Kitengela" },
+      { "@type": "City", "name": "Nairobi" }, { "@type": "Country", "name": "Kenya" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Welding services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steel gates" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steel doors" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steel windows" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Window grills and handrails" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gazebos and roof structures" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Welding repairs" } }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container">
+      <a class="brand" href="index.html">Anino Welding<small>{{LOCATION}} · Kenya</small></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          {{NAV_ITEMS}}
+        </ul>
+      </nav>
+      <div class="header__cta">
+        <a class="btn btn--ink" href="tel:{{PHONE_TEL}}">{{icon:phone}} {{PHONE_DISPLAY}}</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+{{CONTENT}}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="index.html">Anino Welding</a>
+          <p>Gates, doors, windows, grills and steel structures, made in our {{LOCATION}} workshop for clients across Kenya and abroad.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get a quote</h3>
+          <ul>
+            <li><a href="tel:{{PHONE_TEL}}">Call {{PHONE_DISPLAY}}</a></li>
+            <li><a href="{{WA_LINK}}" target="_blank" rel="noopener">WhatsApp {{PHONE_INTL}}</a></li>
+            <li><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Workshop</h3>
+          <ul>
+            <li>{{LOCATION}}, Machakos County</li>
+            <li>{{HOURS}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; {{YEAR}} {{NAME}}</span>
+        <span>No prices online. Call or WhatsApp for a free quote.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="float-cta" aria-label="Quick contact">
+    <a class="f-call" href="tel:{{PHONE_TEL}}" aria-label="Call {{PHONE_DISPLAY}}">{{icon:phone}}<span class="lbl">Call</span></a>
+    <a class="f-wa" href="{{WA_LINK}}" target="_blank" rel="noopener" aria-label="WhatsApp">{{icon:wa}}<span class="lbl">WhatsApp</span></a>
+    <a class="f-mail" href="mailto:{{EMAIL}}" aria-label="Email {{EMAIL}}">{{icon:mail}}<span class="lbl">Email</span></a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
